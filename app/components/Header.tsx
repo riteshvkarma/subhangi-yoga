@@ -13,7 +13,7 @@ export default function Header() {
       <div id="top-bar" className="dark">
         <div className="container">
           <div className="d-flex align-items-center justify-content-center flex-column flex-lg-row py-3 py-lg-0">
-            Transform your life with Subhangi Yoga - Where wellness meets
+            Transform your life with shubhangi Yoga - Where wellness meets
             tradition
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Header() {
                   <Image
                     className="logo-default"
                     src="/logo@2x.png"
-                    alt="Subhangi Mali Logo"
+                    alt="shubhangi Mali Logo"
                     width={180}
                     height={70}
                     priority
@@ -189,6 +189,7 @@ export default function Header() {
                   Home
                 </Link>
               </li>
+
               <li
                 style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}
               >
@@ -204,21 +205,7 @@ export default function Header() {
                   About Us
                 </Link>
               </li>
-              <li
-                style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}
-              >
-                <Link
-                  href="/pricing"
-                  onClick={() => setMobileMenuOpen(false)}
-                  style={{
-                    textDecoration: "none",
-                    color: "inherit",
-                    display: "block",
-                  }}
-                >
-                  Pricing
-                </Link>
-              </li>
+
               <li
                 style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}
               >
@@ -234,9 +221,12 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
-              <li style={{ padding: "0.75rem 0" }}>
+
+              <li
+                style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}
+              >
                 <Link
-                  href="/login"
+                  href="/blog"
                   onClick={() => setMobileMenuOpen(false)}
                   style={{
                     textDecoration: "none",
@@ -244,8 +234,34 @@ export default function Header() {
                     display: "block",
                   }}
                 >
-                  Login
+                  Blog
                 </Link>
+              </li>
+
+              <li style={{ padding: "0.75rem 0" }}>
+                <div style={{ display: "flex", gap: "12px" }}>
+                  <a
+                    href="https://www.facebook.com/semicolonweb/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    href="https://www.instagram.com/semicolonweb/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://twitter.com/__SemiColon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

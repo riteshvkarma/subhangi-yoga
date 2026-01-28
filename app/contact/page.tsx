@@ -129,7 +129,7 @@ export default function ContactPage() {
                     <h3 className="fw-normal text-transform-none">
                       Email | ई-मेल
                     </h3>
-                    <p>malisubhangi487@gmail.com</p>
+                    <p>malishubhangi487@gmail.com</p>
                   </div>
                 </div>
 

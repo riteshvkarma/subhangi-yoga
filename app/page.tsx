@@ -29,11 +29,11 @@ export default function Home() {
                         </h5>
                       </div>
                       <h3 className="fw-bold text-transform-none leading-tight">
-                        Who is <span>Subhangi</span> Mali?
+                        Who is <span>shubhangi</span> Mali?
                       </h3>
                     </div>
                     <p className="mb-4 text-lg leading-relaxed text-gray-600">
-                      Subhangi Mali is an experienced yoga instructor helping
+                      shubhangi Mali is an experienced yoga instructor helping
                       people build strength, calm the mind, and find inner
                       balance through mindful practice.
                       <br />
@@ -127,12 +127,12 @@ export default function Home() {
               className="section-img shadow-xl rounded-l-3xl"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, rgba(255,221,148,.7),rgba(255,221,148,1)), url('/yoga/subhangi_yoga_25.webp') no-repeat center center / cover",
+                  "radial-gradient(ellipse at center, rgba(255,221,148,.7),rgba(255,221,148,1)), url('/yoga/shubhangi_yoga_25.webp') no-repeat center center / cover",
               }}
             >
               <Image
                 className="section-img-sm shadow-lg rounded-xl"
-                src="/yoga/subhangi_yoga_2.webp"
+                src="/yoga/shubhangi_yoga_2.webp"
                 alt="Section Img"
                 width={300}
                 height={300}

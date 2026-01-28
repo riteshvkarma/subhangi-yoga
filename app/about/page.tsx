@@ -67,11 +67,11 @@ export default function AboutPage() {
                 <div className="row gutter-10" data-lightbox="gallery">
                   <div className="col-4">
                     <a
-                      href="/yoga/subhangi_yoga_4.webp"
+                      href="/yoga/shubhangi_yoga_4.webp"
                       data-lightbox="gallery-item"
                     >
                       <Image
-                        src="/yoga/subhangi_yoga_4.webp"
+                        src="/yoga/shubhangi_yoga_4.webp"
                         alt="Gallery"
                         width={400}
                         height={300}
@@ -79,11 +79,11 @@ export default function AboutPage() {
                       />
                     </a>
                     <a
-                      href="/yoga/subhangi_yoga_5.webp"
+                      href="/yoga/shubhangi_yoga_5.webp"
                       data-lightbox="gallery-item"
                     >
                       <Image
-                        src="/yoga/subhangi_yoga_5.webp"
+                        src="/yoga/shubhangi_yoga_5.webp"
                         alt="Gallery"
                         width={400}
                         height={300}
@@ -93,11 +93,11 @@ export default function AboutPage() {
                   </div>
                   <div className="col-8">
                     <a
-                      href="/yoga/subhangi_yoga_8.webp"
+                      href="/yoga/shubhangi_yoga_8.webp"
                       data-lightbox="gallery-item"
                     >
                       <Image
-                        src="/yoga/subhangi_yoga_8.webp"
+                        src="/yoga/shubhangi_yoga_8.webp"
                         alt="Gallery"
                         width={800}
                         height={600}

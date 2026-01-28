@@ -1,4 +1,4 @@
-# Subhangi Yoga - Complete Implementation Guide
+# shubhangi Yoga - Complete Implementation Guide
 
 ## 🎯 Project Status: ✅ COMPLETE & PRODUCTION READY
 
@@ -37,18 +37,21 @@ public/
 ## 🚀 How to Run
 
 ### Development
+
 ```bash
 npm run dev
 # Visit http://localhost:3000
 ```
 
 ### Production Build
+
 ```bash
 npm run build
 npm start
 ```
 
 ### Linting
+
 ```bash
 npm run lint
 ```
@@ -56,6 +59,7 @@ npm run lint
 ## ✨ Features Implemented
 
 ### Home Page (/)
+
 - **Hero Slider**: Fade effect, auto-play, navigation controls
 - **About Section**: Service highlights with icons
 - **Yoga Types**: 6-card grid with icons and descriptions
@@ -65,6 +69,7 @@ npm run lint
 - **Gallery**: Lightbox-enabled image gallery
 
 ### Additional Pages
+
 - **About (/about)**: Story, experience, team showcase
 - **Contact (/contact)**: Contact form with validation, contact info
 
@@ -80,35 +85,38 @@ npm run lint
 ## 📝 Important Notes
 
 ### Canvas Framework Integration
+
 - All Canvas CSS is loaded in `layout.tsx`
 - Canvas JavaScript is loaded with `strategy="afterInteractive"`
 - DOM structure matches Canvas expectations
 - Data attributes (data-animate, data-scrollto) are preserved
 
 ### Swiper Configuration
+
 - Hero slider uses: Navigation, Pagination, EffectFade, Autoplay
 - Carousels use: Navigation, Pagination
 - Modules are properly initialized in useEffect hooks
 
 ### Static Assets
+
 - All images are in `/public/demos/yoga/images/`
 - Icons are SVG files in `/public/demos/yoga/images/yoga-icons/`
 - Gallery images are in `/public/demos/yoga/images/gallery/`
 
 ## 🌐 Routes
 
-| Route | Component | Status |
-|-------|-----------|--------|
-| `/` | Home with all sections | ✅ Complete |
-| `/about` | About Us page | ✅ Complete |
-| `/contact` | Contact form | ✅ Complete |
-| `/login` | (Link in header) | - |
-| `/pricing` | (Integrated in home) | - |
+| Route      | Component              | Status      |
+| ---------- | ---------------------- | ----------- |
+| `/`        | Home with all sections | ✅ Complete |
+| `/about`   | About Us page          | ✅ Complete |
+| `/contact` | Contact form           | ✅ Complete |
+| `/login`   | (Link in header)       | -           |
+| `/pricing` | (Integrated in home)   | -           |
 
 ## 🎨 Styling
 
 - **Canvas CSS Classes**: All original classes are used (slider-element, hero-diagonal, etc.)
-- **Bootstrap Classes**: d-flex, container, row, col-md-*, etc.
+- **Bootstrap Classes**: d-flex, container, row, col-md-\*, etc.
 - **Responsive**: Mobile-first design with breakpoints
 - **Animations**: Data-animate attributes handled by Canvas JS
 
@@ -129,13 +137,14 @@ npm run lint
   "next": "16.1.4",
   "react": "19.2.3",
   "react-dom": "19.2.3",
-  "swiper": "^12.x.x"  // Installed for sliders/carousels
+  "swiper": "^12.x.x" // Installed for sliders/carousels
 }
 ```
 
 ## 🔒 Production Deployment
 
 The application is ready for deployment:
+
 1. Run `npm run build`
 2. Deploy the `.next` folder to your hosting
 3. Set environment variables if needed
@@ -152,6 +161,7 @@ The application is ready for deployment:
 ## 🤝 Maintenance
 
 To add new sections or pages:
+
 1. Create component in `/app/components/`
 2. Import in page.tsx or create new page directory
 3. Follow Canvas class naming conventions
@@ -161,6 +171,7 @@ To add new sections or pages:
 ## 📞 Support
 
 For issues or questions about the Canvas template:
+
 - Refer to AGENTS.md for architecture details
 - Check Canvas documentation at canvastemplate.com
 - Review original HTML templates in parent directory

@@ -93,7 +93,7 @@ export default function YogaSlider() {
               className="swiper-slide hero-diagonal dark bg-color"
               style={{
                 background:
-                  "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('/yoga/subhangi_yoga_21.webp') no-repeat center right / auto 100%",
+                  "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('/yoga/shubhangi_yoga_21.webp') no-repeat center right / auto 100%",
               }}
             >
               <motion.div
@@ -153,7 +153,7 @@ export default function YogaSlider() {
               className="swiper-slide hero-diagonal dark bg-color"
               style={{
                 background:
-                  "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('/yoga/subhangi_yoga_22.webp') no-repeat bottom right / auto 100%",
+                  "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url('/yoga/shubhangi_yoga_22.webp') no-repeat bottom right / auto 100%",
               }}
             >
               <motion.div

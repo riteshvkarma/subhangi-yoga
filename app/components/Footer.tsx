@@ -132,7 +132,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-12">
               <p className="mb-2 text-white-50">
-                © 2026 Subhangi Mali. All Rights Reserved| Designed by
+                © 2026 shubhangi Mali. All Rights Reserved| Designed by
                 Vishwabharti Project Services . create <br />© २०२४ सुभांगी योग.
                 सर्व हक्क राखीव.
               </p>

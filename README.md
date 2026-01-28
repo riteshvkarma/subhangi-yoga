@@ -1,6 +1,6 @@
-# Subhangi Yoga
+# shubhangi Yoga
 
-A modern Next.js website for Subhangi Yoga - Transform your body and mind through wellness and meditation.
+A modern Next.js website for shubhangi Yoga - Transform your body and mind through wellness and meditation.
 
 This is a [Next.js](https://nextjs.org) project that combines the Canvas HTML5 yoga template with modern React architecture.
 

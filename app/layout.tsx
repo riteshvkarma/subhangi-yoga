@@ -25,8 +25,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Subhangi Yoga | Wellness & Meditation",
-  description: "Transform your body and mind with Subhangi Yoga. Join our yoga classes and meditation sessions for a healthier, more balanced life.",
+  title: "shubhangi Yoga | Wellness & Meditation",
+  description:
+    "Transform your body and mind with shubhangi Yoga. Join our yoga classes and meditation sessions for a healthier, more balanced life.",
   viewport: "width=device-width, initial-scale=1",
 };
 

@@ -8,7 +8,7 @@ import "yet-another-react-lightbox/styles.css";
 
 const galleryImages = Array.from({ length: 28 }, (_, i) => ({
   id: i + 1,
-  src: `/yoga/subhangi_yoga_${i + 1}.webp`,
+  src: `/yoga/shubhangi_yoga_${i + 1}.webp`,
   alt: `Yoga Gallery Image ${i + 1}`,
 }));
 
