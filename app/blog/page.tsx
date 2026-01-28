@@ -20,8 +20,10 @@ type BlogApiResponse = {
 
 async function getBlogPosts(page: number): Promise<BlogApiResponse> {
   try {
-    const API_URL =
-      process.env.BLOG_API_URL || "http://localhost/subhangi/blog.php";
+    const API_BASE =
+      process.env.NEXT_PUBLIC_BLOG_API || "http://api.vishwabhartiprojects.com";
+
+    const API_URL = `${API_BASE}/blog.php`;
 
     const res = await fetch(`${API_URL}?page=${page}`, {
       cache: "no-store",
@@ -55,6 +57,9 @@ export default async function BlogPage({
     totalPages,
     currentPage,
   } = await getBlogPosts(page);
+
+  const API_BASE =
+    process.env.NEXT_PUBLIC_BLOG_API || "http://api.vishwabhartiprojects.com";
 
   return (
     <>
@@ -99,7 +104,7 @@ export default async function BlogPage({
                     <article className="card border-0 shadow-sm h-100">
                       <Link href={`/blog/${post.slug}`}>
                         <Image
-                          src={`http://localhost/subhangi/${post.image}`}
+                          src={`${API_BASE}${post.image}`}
                           alt={post.title}
                           width={600}
                           height={400}

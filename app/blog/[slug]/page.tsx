@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import Image from "next/image";
 
-const API_BASE = "http://localhost/subhangi";
+const API_BASE = "http://api.vishwabhartiprojects.com/";
 
 type BlogPost = {
   id: number;
