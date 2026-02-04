@@ -69,6 +69,15 @@ export default function Header() {
                   <li className="menu-item">
                     <Link
                       className="menu-link"
+                      href="/gallery"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      Gallery
+                    </Link>
+                  </li>
+                  <li className="menu-item">
+                    <Link
+                      className="menu-link"
                       href="/contact"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
