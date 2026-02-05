@@ -32,7 +32,7 @@ export default function YogaAwards() {
     fetchAwards();
   }, []);
 
-  if (images.length === 0) return null;
+  const isEmpty = images.length === 0;
 
   return (
     <section className="section bg-light">
@@ -46,21 +46,27 @@ export default function YogaAwards() {
         </div>
 
         <div className="row g-4">
-          {images.map((img, index) => (
-            <div key={index} className="col-md-6">
-              <div className="card shadow-sm border-0 h-100">
-                <Image
-                  src={img.url}
-                  alt="Yoga Award"
-                  width={800}
-                  height={600}
-                  unoptimized
-                  className="card-img-top"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+          {isEmpty ? (
+            <div className="col-12 text-center text-muted">
+              Awards images are loading or not available.
             </div>
-          ))}
+          ) : (
+            images.map((img, index) => (
+              <div key={index} className="col-md-6">
+                <div className="card shadow-sm border-0 h-100">
+                  <Image
+                    src={img.url}
+                    alt="Yoga Award"
+                    width={800}
+                    height={600}
+                    unoptimized
+                    className="card-img-top"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </section>

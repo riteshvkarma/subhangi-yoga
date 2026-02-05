@@ -142,102 +142,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <YogaAwards />
+      {/* awards Section */}
 
-      {/* Awards Section */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <div className="text-center mb-5">
-            <h5 className="text-primary uppercase tracking-widest">
-              Achievements & Awards | सन्मान व पुरस्कार
-            </h5>
-            <h2 className="fw-bold">Recognition Received by Shubhangi Mali</h2>
-            <p className="text-muted">
-              Celebrating milestones of dedication in yoga teaching.
-              <br />
-              योगसेवेमधील समर्पणासाठी मिळालेले सन्मान.
-            </p>
-          </div>
-
-          <div
-            id="awardsCarousel"
-            className="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-interval="2500"
-          >
-            <div className="carousel-inner rounded shadow">
-              {/* Slide 1 */}
-              <div className="carousel-item active">
-                <div className="row g-2">
-                  <div className="col-md-6">
-                    <Image
-                      src="/yoga/shubhangi_yoga_21.webp"
-                      className="d-block w-100 rounded"
-                      alt="Yoga Award 1"
-                      width={800}
-                      height={400}
-                      style={{ height: "350px", objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <Image
-                      src="/yoga/shubhangi_yoga_22.webp"
-                      className="d-block w-100 rounded"
-                      alt="Yoga Award 2"
-                      width={800}
-                      height={400}
-                      style={{ height: "350px", objectFit: "cover" }}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Slide 2 */}
-              <div className="carousel-item">
-                <div className="row g-2">
-                  <div className="col-md-6">
-                    <Image
-                      src="/yoga/shubhangi_yoga_23.webp"
-                      className="d-block w-100 rounded"
-                      alt="Yoga Award 3"
-                      width={800}
-                      height={400}
-                      style={{ height: "350px", objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <Image
-                      src="/yoga/shubhangi_yoga_25.webp"
-                      className="d-block w-100 rounded"
-                      alt="Yoga Award 4"
-                      width={800}
-                      height={400}
-                      style={{ height: "350px", objectFit: "cover" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#awardsCarousel"
-              data-bs-slide="prev"
-            >
-              <span className="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#awardsCarousel"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-      </section>
+      <Reveal>
+        <YogaAwards />
+      </Reveal>
 
       {/* Yoga Types Section */}
       <Reveal>
