@@ -2,18 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
+import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
 
-const galleryImages = Array.from({ length: 28 }, (_, i) => ({
-  id: i + 1,
-  src: `/yoga/shubhangi_yoga_${i + 1}.webp`,
-  alt: `Yoga Gallery Image ${i + 1}`,
-}));
+// Mixed media: images + YouTube videos
+const mediaItems = [
+  ...Array.from({ length: 28 }, (_, i) => ({
+    type: "image" as const,
+    src: `/yoga/shubhangi_yoga_${i + 1}.webp`,
+    alt: `Yoga Gallery Image ${i + 1}`,
+  })),
+  {
+    type: "youtube" as const,
+    youtubeId: "dQw4w9WgXcQ", // Replace with real video ID
+    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+    alt: "Yoga Award Ceremony Video",
+  },
+];
 
 export default function GalleryPage() {
-  const galleryRef = useRef<HTMLDivElement>(null);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   return (
@@ -25,37 +34,48 @@ export default function GalleryPage() {
             Yoga Gallery <span>| योग गॅलरी</span>
           </h2>
           <span>
-            Moments from our yoga sessions. <br />
-            आमच्या योग सत्रांतील सुंदर क्षण.
+            Moments from our yoga sessions & special recognitions. <br />
+            योग सत्रे आणि विशेष सन्मानाचे सुंदर क्षण.
           </span>
         </div>
 
-        {/* Gallery */}
-        <div className="section p-0 m-0">
-          <div
-            ref={galleryRef}
-            className="columns-2 sm:columns-3 lg:columns-4 gap-4 px-4"
-          >
-            {galleryImages.map((image) => (
-              <button
-                key={image.id}
-                type="button"
-                className="mb-4 block w-full break-inside-avoid cursor-zoom-in bg-transparent border-0 p-0 text-left"
-                onClick={() => setLightboxIndex(image.id - 1)}
-              >
-                <div className="w-full overflow-hidden rounded-md">
+        {/* Masonry Layout */}
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 px-4">
+          {mediaItems.map((item, index) => (
+            <button
+              key={index}
+              type="button"
+              className="mb-4 block w-full break-inside-avoid cursor-zoom-in bg-transparent border-0 p-0 text-left"
+              onClick={() => setLightboxIndex(index)}
+            >
+              <div className="w-full overflow-hidden rounded-md">
+                {item.type === "image" ? (
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={item.src}
+                    alt={item.alt}
                     width={600}
                     height={400}
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="w-full h-auto"
                   />
-                </div>
-              </button>
-            ))}
-          </div>
+                ) : (
+                  <div className="relative">
+                    <Image
+                      src={item.thumbnail}
+                      alt={item.alt}
+                      width={600}
+                      height={400}
+                      className="w-full h-auto"
+                      unoptimized
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                      <span className="text-white text-3xl">▶</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </button>
+          ))}
         </div>
 
         {/* Back Button */}
@@ -72,7 +92,21 @@ export default function GalleryPage() {
           open
           close={() => setLightboxIndex(null)}
           index={lightboxIndex}
-          slides={galleryImages.map((img) => ({ src: img.src }))}
+          plugins={[Video]}
+          slides={mediaItems.map((item) =>
+            item.type === "image"
+              ? { src: item.src }
+              : {
+                  type: "video",
+                  poster: item.thumbnail,
+                  sources: [
+                    {
+                      src: `https://www.youtube.com/watch?v=${item.youtubeId}`,
+                      type: "video/youtube",
+                    },
+                  ],
+                },
+          )}
         />
       )}
     </section>
