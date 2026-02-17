@@ -34,14 +34,14 @@ export default function Home() {
                       </h3>
                     </div>
                     <p className="mb-4 text-lg leading-relaxed text-gray-600">
-                      shubhangi Mali is an experienced yoga instructor helping
-                      people build strength, calm the mind, and find inner
-                      balance through mindful practice.
+                      Soham Yoga Classes offers specialized yoga programs for
+                      children, women, and all age groups focusing on holistic
+                      physical and mental wellness.
                       <br />
                       <span className="block mt-2 text-base text-gray-500">
-                        सुभांगी माळी या अनुभवी योग प्रशिक्षिका असून योगाच्या
-                        माध्यमातून शारीरिक बळकटी, मानसिक शांती आणि संतुलन
-                        साधण्यासाठी मार्गदर्शन करतात.
+                        सोहम योगा क्लासेस मध्ये बालसंस्कार वर्ग, गर्भसंस्कार,
+                        वेट लॉस, फेस योगा, पॉवर योगा तसेच थायरॉईड, बी.पी., शुगर
+                        यांसाठी विशेष योग प्रशिक्षण दिले जाते.
                       </span>
                     </p>
 
@@ -51,18 +51,19 @@ export default function Home() {
                       </div>
                       <div className="fbox-content">
                         <h3 className="fw-normal text-transform-none">
-                          Weekly Guided Yoga Classes{" "}
+                          Bal Sanskar & Kids Yoga
                           <span className="text-sm text-gray-500">
-                            (साप्ताहिक योग वर्ग)
+                            (बाल संस्कार वर्ग)
                           </span>
                         </h3>
                         <p>
-                          Guided yoga sessions focused on flexibility, strength,
-                          stress relief, and mindful living.
+                          Improving concentration, discipline, confidence, and
+                          healthy development in children through yoga and
+                          values.
                           <br />
                           <span className="text-gray-500">
-                            लवचिकता, ताकद, तणावमुक्ती आणि सजग जीवनशैलीसाठी
-                            मार्गदर्शित योग सत्रे.
+                            लहान मुलांमध्ये एकाग्रता, आत्मविश्वास, शिस्त आणि
+                            चांगले संस्कार विकसित करण्यासाठी विशेष योग वर्ग.
                           </span>
                         </p>
                       </div>
@@ -74,18 +75,18 @@ export default function Home() {
                       </div>
                       <div className="fbox-content">
                         <h3 className="fw-normal text-transform-none">
-                          10+ Years of Teaching Experience{" "}
+                          Garbh Sanskar & Women Wellness
                           <span className="text-sm text-gray-500">
-                            (१०+ वर्षांचा अनुभव)
+                            (गर्भ संस्कार वर्ग)
                           </span>
                         </h3>
                         <p>
-                          Over a decade of experience offering patient,
-                          personalized yoga guidance.
+                          Supporting mothers with healthy pregnancy practices
+                          and safe guided yoga sessions.
                           <br />
                           <span className="text-gray-500">
-                            दहा वर्षांहून अधिक अनुभवासह वैयक्तिक आणि संयमी
-                            मार्गदर्शन.
+                            गर्भावस्थेत आई व बाळाच्या आरोग्यासाठी सुरक्षित व
+                            मार्गदर्शित योग सत्रे.
                           </span>
                         </p>
                       </div>
@@ -97,27 +98,28 @@ export default function Home() {
                       </div>
                       <div className="fbox-content">
                         <h3 className="fw-normal text-transform-none">
-                          A Community of 2100+ Practitioners{" "}
+                          Weight Loss, Face & Power Yoga
                           <span className="text-sm text-gray-500">
-                            (२१००+ योग साधक)
+                            (वेट लॉस • फेस योगा • पॉवर योगा)
                           </span>
                         </h3>
                         <p>
-                          Be part of a supportive community growing together
-                          through yoga.
+                          Specialized programs for weight management, glowing
+                          skin, strength building, and lifestyle disorders.
                           <br />
                           <span className="text-gray-500">
-                            योगाच्या माध्यमातून एकत्र वाढणाऱ्या साधक समुदायाचा
-                            भाग बना.
+                            वजन कमी करणे, चेहऱ्यावरील तेज वाढवणे, पॉवर योगा तसेच
+                            थायरॉईड, बी.पी., शुगर यांसाठी योग प्रशिक्षण.
                           </span>
                         </p>
                       </div>
                     </div>
                     <p className="mt-4 text-lg font-medium text-gray-700">
-                      Yoga is not just practice — it’s a way of life.
+                      Join Soham Yoga Classes in Pune and experience guided,
+                      personalized yoga training.
                       <br />
                       <span className="text-base text-gray-500">
-                        योग हा केवळ व्यायाम नसून जीवनशैली आहे.
+                        पत्ता: खांडे नगर, पुणे | संपर्क: 9130687655 / 9226103538
                       </span>
                     </p>
                   </Reveal>
@@ -128,12 +130,12 @@ export default function Home() {
               className="section-img shadow-xl rounded-l-3xl"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, rgba(255,221,148,.7),rgba(255,221,148,1)), url('/yoga/shubhangi_yoga_25.webp') no-repeat center center / cover",
+                  "radial-gradient(ellipse at center, rgba(255,221,148,.7),rgba(255,221,148,1)), url('/yoga/shubhangi_yoga_21.webp') no-repeat center center / cover",
               }}
             >
               <Image
                 className="section-img-sm shadow-lg rounded-xl"
-                src="/yoga/shubhangi_yoga_2.webp"
+                src="/yoga/shubhangi_yoga.webp"
                 alt="Section Img"
                 width={300}
                 height={300}

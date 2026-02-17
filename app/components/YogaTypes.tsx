@@ -25,49 +25,49 @@ export default function YogaTypes() {
     {
       id: 1,
       icon: "/demos/yoga/images/yoga-icons/color/svg/asana_lotus_col.svg",
-      title: "Yoga for Beginners",
+      title: "Bal Sanskar & Kids Yoga",
       description:
-        "Simple and guided yoga sessions to build flexibility, strength, and confidence.\nयोगाची सुरुवात करण्यासाठी सोपे आणि मार्गदर्शित वर्ग.",
+        "Improving concentration, confidence, discipline, and healthy development in children.\nलहान मुलांमध्ये एकाग्रता, आत्मविश्वास व चांगले संस्कार विकसित करण्यासाठी विशेष वर्ग.",
       borderColor: "#9DC3E2",
     },
     {
       id: 2,
       icon: "/demos/yoga/images/yoga-icons/color/svg/asana_cobra.svg",
-      title: "30+ Yoga Poses",
+      title: "Garbh Sanskar Yoga",
       description:
-        "Learn essential yoga poses for balance, mobility, and overall wellness.\nसंतुलन, लवचिकता आणि आरोग्यासाठी ३०+ योगासनांचा सराव.",
+        "Safe and guided yoga sessions supporting healthy pregnancy and emotional well-being.\nगर्भावस्थेत आई व बाळाच्या आरोग्यासाठी सुरक्षित आणि मार्गदर्शित योग सत्रे.",
       borderColor: "#FFB5CC",
     },
     {
       id: 3,
       icon: "/demos/yoga/images/yoga-icons/color/svg/man_well.svg",
-      title: "Well-Trained Teachers",
+      title: "Weight Loss Yoga",
       description:
-        "Experienced instructors offering safe, mindful, and personalized guidance.\nअनुभवी प्रशिक्षकांकडून सुरक्षित आणि वैयक्तिक मार्गदर्शन.",
+        "Structured programs for weight management, fat reduction, and lifestyle improvement.\nवजन कमी करणे आणि निरोगी जीवनशैलीसाठी विशेष योग प्रशिक्षण.",
       borderColor: "#F4ABEF",
     },
     {
       id: 4,
       icon: "/demos/yoga/images/yoga-icons/color/svg/kundalini_col.svg",
-      title: "Holistic Wellness",
+      title: "Face Yoga & Beauty Wellness",
       description:
-        "Yoga practices that nurture body, mind, and inner awareness.\nशरीर, मन आणि आत्मिक संतुलनासाठी सर्वांगीण योगाभ्यास.",
+        "Natural techniques for glowing skin, reduced wrinkles, and facial toning.\nचेहऱ्यावरील तेज वाढवणे व त्वचेची निगा राखण्यासाठी फेस योगा.",
       borderColor: "#F2A490",
     },
     {
       id: 5,
       icon: "/demos/yoga/images/yoga-icons/color/svg/lotus_col.svg",
-      title: "Classes in Nature",
+      title: "Power Yoga & Fitness",
       description:
-        "Practice yoga in calm, natural surroundings for deeper relaxation.\nनिसर्गाच्या सान्निध्यात शांत आणि ताजेतवाने योग वर्ग.",
+        "Strength-building yoga to improve stamina, flexibility, and overall fitness.\nपॉवर योगामुळे ताकद, लवचिकता व सहनशक्ती वाढते.",
       borderColor: "#9DD2D8",
     },
     {
       id: 6,
       icon: "/demos/yoga/images/yoga-icons/color/svg/om_col.svg",
-      title: "Free Trial Class",
+      title: "Therapeutic Yoga",
       description:
-        "Experience our teaching style with a complimentary trial session.\nएक मोफत प्रात्यक्षिक वर्ग घेऊन अनुभव घ्या.",
+        "Special yoga sessions for Thyroid, BP, Sugar, and lifestyle disorders.\nथायरॉईड, बी.पी., शुगर यांसारख्या समस्यांसाठी विशेष योग प्रशिक्षण.",
       borderColor: "#D0E6A5",
     },
   ];
@@ -85,8 +85,11 @@ export default function YogaTypes() {
         <header className="mb-5 text-center">
           <h2 className="fw-bold">Yoga Classes & Wellness Programs</h2>
           <p className="text-muted mt-2">
-            Beginner-friendly yoga classes, guided practices, meditation, and
-            holistic wellness programs designed for mind, body, and balance.
+            Specialized yoga programs for children, women, and all age groups
+            focusing on physical fitness, mental strength, and overall wellness.
+            <br />
+            बालसंस्कार, गर्भसंस्कार, वेट लॉस, फेस योगा आणि सर्वांगीण आरोग्यासाठी
+            विशेष योग वर्ग.
           </p>
         </header>
         <motion.div

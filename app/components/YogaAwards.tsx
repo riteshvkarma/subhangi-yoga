@@ -45,23 +45,32 @@ export default function YogaAwards() {
           </span>
         </div>
 
-        <div className="row g-4">
+        <div
+          className="masonry-grid"
+          style={{
+            columnGap: "1.5rem",
+          }}
+        >
           {isEmpty ? (
-            <div className="col-12 text-center text-muted">
+            <div className="text-center text-muted">
               Awards images are loading or not available.
             </div>
           ) : (
             images.map((img, index) => (
-              <div key={index} className="col-md-6">
-                <div className="card shadow-sm border-0 h-100">
+              <div
+                key={index}
+                className="mb-4"
+                style={{ breakInside: "avoid" }}
+              >
+                <div className="card shadow-sm border-0">
                   <Image
                     src={img.url}
                     alt="Yoga Award"
                     width={800}
                     height={600}
                     unoptimized
-                    className="card-img-top"
-                    style={{ objectFit: "cover" }}
+                    className="w-100 rounded"
+                    style={{ height: "auto" }}
                   />
                 </div>
               </div>
@@ -69,6 +78,23 @@ export default function YogaAwards() {
           )}
         </div>
       </div>
+      <style jsx>{`
+        .masonry-grid {
+          column-count: 1;
+        }
+
+        @media (min-width: 576px) {
+          .masonry-grid {
+            column-count: 2;
+          }
+        }
+
+        @media (min-width: 992px) {
+          .masonry-grid {
+            column-count: 3;
+          }
+        }
+      `}</style>
     </section>
   );
 }
